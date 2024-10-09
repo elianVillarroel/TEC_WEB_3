@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .foo{
+            color: blue;
+        }
+        #bar{
+            color: blue;
+        }
+        .abuelo div{
+            color: red;
+        }
+        .abuelo>div{
+            color: orange;
+        }
+       .hijo1{
+            color: yellow;
+        }
+        .hijo1~div{
+            color:violet;
+        }
+        #outer a{
+            background-color: red;
+        }
+        #outer #inner a {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p class="foo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <div class="bar">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+    <div class="baz">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+
+    <div class="abuelo">
+        <div class="hijo1">Soy el hijo 1</div>
+        <div class="hijo2">Soy el hijo 2</div>
+        <p>Soy el hijo 4</p>
+        <div class="hijo3">Soy el hijo 3</div>
+    </div>
+
+    <div id="outer">
+        <div id="inner">
+            <a href="">HOLA MUNDO</a>
+        </div>
+    </div>
+</body>
+</html> 
